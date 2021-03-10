@@ -20,15 +20,16 @@ function setup() {
 
   if (deformation < 180 && deformation > 100) {
     car.shapeColor = green(230, 230, 0);
-  }
-  if (deformation < 100) {
-    car.shapeColor = blue(0, 255, 0);
+    if (deformation < 100) {
+      car.shapeColor = blue(0, 255, 0);
+    }
   }
 }
 
+
 function draw() {
   background(255, 255, 255);
-  wall(80, 80, 80);
+
 
 
   drawSprites();
